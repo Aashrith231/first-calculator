@@ -2,6 +2,10 @@
 
 const display = document.getElementById("display");
 
+function deleteLastDigit() {
+    display.value = display.value.slice(0, -1);
+}
+
 function calculate(){
 try {
    display.value= eval(display.value);
